@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>VRISTO - Multipurpose Tailwind Dashboard Template</title>
+  <title>Beranda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,6 +16,7 @@
   <script defer src="assets/js/popper.min.js"></script>
   <script defer src="assets/js/tippy-bundle.umd.min.js"></script>
   <script defer src="assets/js/sweetalert.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 
 <body
@@ -23,9 +24,7 @@
   class="relative overflow-x-hidden font-nunito text-sm font-normal antialiased"
   :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.theme === 'dark' || $store.app.isDarkMode ?  'dark' : '', $store.app.menu, $store.app.layout,$store.app.rtlClass]"
 >
-<!-- sidebar menu overlay -->
-<div x-cloak class="fixed inset-0 z-50 bg-[black]/60 lg:hidden" :class="{'hidden' : !$store.app.sidebar}"
-     @click="$store.app.toggleSidebar()"></div>
+
 
 <!-- screen loader -->
 <div
